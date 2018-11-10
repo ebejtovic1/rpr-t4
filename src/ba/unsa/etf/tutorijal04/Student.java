@@ -1,33 +1,42 @@
 package ba.unsa.etf.tutorijal04;
 
 public class Student {
-    private String imeIPrezime="";
-    private int brIndexa=0;
 
-    public Student(String a, int index){
-        setImeIPrezime(a);
-        setBrIndexa(index);
+    private String ime, prezime;
+    private int index;
+
+    public Student (String ime, String prezime, int index) {
+        this.ime = ime;
+        this.prezime = prezime;
+        this.index = index;
     }
 
-    //dodati potrebno u metode
-
-    public String Ispisi(){
-        return null;
+    public String getIme ( ) {
+        return ime;
     }
 
-    public String getImeIPrezime ( ) {
-        return null;
+    public void setIme (String ime) {
+        this.ime = ime;
     }
 
-    public void setImeIPrezime (String imeIPrezime) {
-        return;
+    public String getPrezime ( ) {
+        return prezime;
     }
 
-    public int getBrIndexa ( ) {
-        return 0;
+    public void setPrezime (String prezime) {
+        this.prezime = prezime;
     }
 
-    public void setBrIndexa (int brIndexa) {
-        return;
+    public int getIndex ( ) {
+        return index;
     }
+
+    public void setIndex (int index) {
+        this.index = index;
+    }
+    
+
+
+
+
 }
