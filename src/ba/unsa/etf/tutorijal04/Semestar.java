@@ -14,7 +14,6 @@ public class Semestar {
     public String ispisi(){
         String s="";
         for(int i=0;i<brojPredmeta;i++){
-
             String pomocni=predmeti[i].getNazivPredmeta();
             s+= (i+1)+". " + pomocni + "\n";
         }
