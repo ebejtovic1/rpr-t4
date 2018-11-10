@@ -34,7 +34,7 @@ public class Student {
     public void setIndex (int index) {
         this.index = index;
     }
-    
+
     public String ispisi() {
         return prezime +" "+ ime + " (" + index + ")";
     }

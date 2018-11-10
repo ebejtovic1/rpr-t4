@@ -31,10 +31,22 @@ public class ObavezniPredmet extends Predmet {
         upisaniStudenti=new Student[50];
     }
     public void upisiStudenta(Student s){
-       return;
+        if(brojStudenata<maxBr){
+            upisaniStudenti[brojStudenata]=s;
+            brojStudenata++;
+        }
+        else {
+            System.out.println("Predmet popunjen");
+        }
     }
-    @Override
+    
     public String ispisi(){
-        return null;
+
+        String s="";
+        for(int i=0;i<brojStudenata;i++){
+
+            s+= (i+1)+". " + upisaniStudenti[i].getPrezime() + " " + upisaniStudenti[i].getIme() + " (" + upisaniStudenti[i].getIndex() + ")" + "\n";
+        }
+        return s;
     }
 }
