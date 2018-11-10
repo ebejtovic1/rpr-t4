@@ -7,6 +7,7 @@ public class ObavezniPredmet extends Predmet {
     private final int maxBr;
     private Student [] upisaniStudenti=null;
 
+    @Override
     public String getNazivPredmeta ( ) {
         return nazivPredmeta;
     }
