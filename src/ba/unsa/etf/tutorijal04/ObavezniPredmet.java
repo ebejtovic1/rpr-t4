@@ -39,7 +39,7 @@ public class ObavezniPredmet extends Predmet {
             System.out.println("Predmet popunjen");
         }
     }
-    
+    @Override
     public String ispisi(){
 
         String s="";
